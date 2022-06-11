@@ -1,3 +1,5 @@
 for html entites (symbol)
 https://dev.w3.org/html5/html-author/charref
 
+for html, css, javascript 
+developer.mozilla.org
