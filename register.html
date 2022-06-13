@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="success.html" method="post">
+        <table align="center" border="2" cellpadding="10" width="50%">
+            <tr>
+                <td>
+                    <h3>Register form</h3>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="fullname" placeholder="fullname" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    select birth-date
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="date" name="dob" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="number" name="mobile" placeholder="10 digit mobile no" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>select gender</b> <br><br>
+                    <label for="male">
+                        <input id="male" type="radio" name="gender" value="1" required>Male
+                    </label>
+                    <label for="female">
+                        <input id="female" type="radio" name="gender" value="0" required>Female
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Select language you can read/write/speak</b> <br> <br>
+                    <label for="gujarati">
+                        <input type="checkbox" name="gujarati" value="1" id="gujarati">Gujarati
+                    </label>
+                    <label for="hindi">
+                        <input type="checkbox" name="hindi" value="2" id="hindi">Hindi
+                    </label>
+                    <label for="english">
+                        <input type="checkbox" name="english" value="4" id="english">English
+                    </label>
+                    <label for="sanskrit">
+                        <input type="checkbox" name="sanskrit" value="8" id="sanskrit">sanskrit
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="country" required>
+                        <option value="">Select country</option>
+                        <option value="1">India</option>
+                        <option value="2">Brazil</option>
+                        <option value="3">Canada</option>
+                        <option value="4">US</option>
+                        <option value="5">UK</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="platform" multiple size="3" required>
+                        <option value="">platform</option>
+                        <option value="2">React & Node JS</option>
+                        <option value="3">PHP</option>
+                        <option value="4">Django</option>
+                        <option value="5">Flutter</option>
+                        <option value="6">Laravel</option>
+                        <option value="7">React Native</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>address</b> <br><br>
+                    <textarea  name="address" cols="30" rows="10" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
