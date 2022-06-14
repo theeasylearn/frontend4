@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 
+        post
+        post means data will be sent to server via one request and web page to which data is submitted 
+        will be display in browser via another request
+
+        get 
+        get method both data and web page to which data is submitted will be open via single request
+
+        file:///C:/frontend4/success.html?fullname=Ankit+Patel&dob=1985-01-01&mobile=1000&gender=1&gujarati=1&hindi=2&country=4&platform=2&platform=3&platform=4&platform=6&address=Ex+ex+commodi+qui+qu&photo=&secret=omnamahshivay&secret2=jaymataji&submit=register
+     -->
 </head>
 <body>
-    <form action="success.html" method="post">
+    <form action="success.html" method="post" enctype="multipart/form-data">
         <table align="center" border="2" cellpadding="10" width="50%">
             <tr>
                 <td>
@@ -94,13 +104,25 @@
                 </td>
             </tr>
             <tr>
-                <td></td>
+                <td>
+                    <b>select photo</b> <br>
+                    <input type="file" name="photo" accept="image/*" >
+                    <!-- user can select only image -->
+                </td>
             </tr>
             <tr>
-                <td></td>
+                <td>
+                    <b>hidden value</b> <br>
+                    <input type="hidden" name="secret" value="omnamahshivay">
+                    <input type="hidden" name="secret2" value="jaymataji">
+                </td>
             </tr>
             <tr>
-                <td></td>
+                <td align="center">
+                    <input type="submit" value="register" name="submit"> 
+                    <input type="reset" value="clear all" name="reset">
+                    <input type="button" value="do nothing" name="nothing">
+                </td>
             </tr>
             <tr>
                 <td></td>
