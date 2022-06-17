@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selctor (it applies to all tag) */
+        *  
+        {
+            letter-spacing: 1px;
+            word-spacing: 5px;
+            line-height: 150%;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: justify;
+            /* border:1px solid red; */
+            margin:0px;
+        }
+        /* type selector */
+        h1
+        {
+            background-color: aliceblue;
+            margin:10px; /* same margin for all directions */
+            text-shadow: 2px 2px 4px gold;
+        }
+        table{
+            border:1px solid red;
+            width:80%;
+            margin: auto;  /* will put table horizontally into center of the screen */
+            border-collapse:collapse; 
+            /* display single border for each and every td tag (must be used inside table) */
+
+        }
+        td 
+        {
+            border:1px dashed blue;
+            background-color: aliceblue;
+            padding: 10px; /* same padding for all directions */
+        }
+        div 
+        {
+            border:1px solid black;
+            background-color: bisque;
+            padding: 5px 20px; /* first value is for top & bottom, second value left & right */
+            margin-left:50px;
+            margin-top:10px;
+            margin-bottom:20px;
+            margin-right:100px;
+
+            /* offset-x | offset-y | blur-radius | color */
+            box-shadow: 5px 5px 10px grey;
+            border-radius: 30px;    
+        }
+    </style>
+</head>
+<body>
+    <h1>Sample Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, vel, eos ipsam nobis cupiditate labore reiciendis, harum nulla consectetur facilis repellendus impedit nemo repellat. Dicta, dignissimos. Id voluptatem aliquam sint beatae alias mollitia tempore veritatis soluta exercitationem velit ipsam minima dolore quidem illum, quos commodi tenetur aliquid sapiente natus quis consequatur blanditiis culpa. Consequatur rem minus nostrum! Quisquam asperiores nam, a quod quis consequuntur repudiandae culpa ab pariatur vel nihil possimus animi delectus vitae nulla, fuga enim modi illo explicabo, in corporis natus omnis saepe. Quos, quaerat praesentium rem voluptates animi possimus nisi ipsam unde nostrum voluptate error cumque doloremque?</p>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident consequatur velit nam quis incidunt ea, explicabo excepturi placeat itaque pariatur, iste harum saepe vel impedit? Amet, facilis iusto ipsa delectus sit est tempora expedita placeat, deleniti quia quidem vero, nisi incidunt. Autem asperiores doloribus maiores quae! At doloribus distinctio aliquid, autem eos quibusdam sequi totam enim nobis odit? Consectetur doloribus, eaque dolores quasi id aliquid exercitationem in eos voluptatibus, nulla magni recusandae asperiores minima. Laudantium vel maxime magni tenetur sunt nisi repellendus est repudiandae doloremque! Quos accusamus, adipisci, earum sapiente eius eaque nobis tempora voluptates recusandae magni quisquam temporibus expedita voluptatem eligendi, ad officiis! Vitae sequi ullam mollitia hic quam, harum maxime saepe, libero ratione impedit dolore earum natus doloribus atque maiores inventore voluptate debitis! Illo obcaecati beatae iste officia praesentium et veritatis itaque! Fugiat at sunt obcaecati illo eius, quia, accusantium modi sint suscipit tempora voluptas neque error facilis placeat nam deleniti officia minima. Tempora eius nostrum perspiciatis commodi alias, harum, minus quos eligendi molestias optio, ipsum ipsa? Eum commodi inventore necessitatibus aut in odio maiores deserunt ut doloribus non fugit fugiat ducimus aperiam officiis architecto excepturi ipsa, repudiandae, sed soluta modi facere voluptatum minima illum eius. Incidunt, autem.
+    </div>
+    <table>
+        <tr>
+            <td>detail</td>
+            <td>detail</td>
+            <td>detail</td>
+        </tr>
+        <tr>
+            <td>detail</td>
+            <td>detail</td>
+            <td>detail</td>
+        </tr>
+        <tr>
+            <td>detail</td>
+            <td>detail</td>
+            <td>detail</td>
+        </tr>
+        <tr>
+            <td>detail</td>
+            <td>detail</td>
+            <td>detail</td>
+        </tr>
+        <tr>
+            <td>detail</td>
+            <td>detail</td>
+            <td>detail</td>
+        </tr>
+    </table>
+</body>
+</html>
