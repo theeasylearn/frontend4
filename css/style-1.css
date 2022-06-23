@@ -1,0 +1,61 @@
+*
+{
+    margin:0px;
+    padding:0px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+html 
+{
+    height: 100%;
+}
+body 
+{
+    background-color: bisque;
+    height: 100%;
+}
+/* id selector */
+#header
+{
+    background-color: brown !important;
+    top: 0px;
+    position: sticky;
+    color:white;
+    text-align: center;
+}
+#footer{
+    bottom: 0px;
+    position: sticky;
+    width: 100%;
+    background-color: brown;
+    color:white;
+    text-align: center;
+    padding: 20px 0px;
+}   
+#content 
+{
+    overflow: hidden;
+    min-height: 81%;
+}
+h1 
+{
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-top:20px;
+    font-family: 'Anek Latin', sans-serif;
+}
+.advertise 
+{
+    letter-spacing: 2px;
+    line-height: 125%;
+    text-align: center;
+    border:1px solid brown;
+}
+.extra-margin 
+{
+    margin: 10px;
+}
+.shadow 
+{
+    box-shadow: 5px 5px 5px black;
+}

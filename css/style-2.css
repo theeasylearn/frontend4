@@ -1,0 +1,37 @@
+/* below class can be applied only to ul tag */
+ul.links 
+{
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul.links>li 
+{
+    display: inline;
+}
+/* anchor tag that has link attribute */
+ul.links>li>a:link , ul.links>li>a:visited 
+
+{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+ul.links>li>a:hover 
+{
+    color: red;
+    background-color: white;
+}
+ul.links>li>a:active 
+{
+    color: black;
+    background-color: yellow;
+}
+a:link 
+{
+    color:brown;
+    
+}
