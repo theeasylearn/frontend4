@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container 
+        {
+            padding:10px;
+            background-color: yellow;
+            margin-bottom: 10px;
+            display: flex;
+            /* flex-direction: row-reverse; */
+        }
+        .container>div
+        {
+            background-color: red;
+            color:white;
+            font-size: 3rem;
+            border:1px solid white;
+            height: 100px;
+            width: 250px;
+            text-align: center;
+        }
+        .wrap 
+        {
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <h1>wrap flex-start</h1>
+    <div class="container wrap">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+    <h1>flex-end</h1>
+    <div class="container" style="justify-content:flex-end">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h1>center</h1>
+    <div class="container" style="justify-content:center">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h1>space-between</h1>
+    <div class="container" style="justify-content:space-between">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <h1>space-around</h1>
+    <div class="container" style="justify-content:space-around">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h1>space-evenly</h1>
+    <div class="container" style="justify-content:space-evenly">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

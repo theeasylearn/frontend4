@@ -1,0 +1,11 @@
+1) create a web page that has food recepie of 3 food items. apply attractive style to it using css class and id selector.
+    it should like food_receipe.png 
+
+2) create a web page that has customer tetimonals. apply attractive style to it using css class and id selector.
+    it should be like customer-tetimonals.png 
+
+
+3) create a web page that has 4 product per line. apply attractive style to it using css class and id selector.
+
+it should be like 
+https://s3.envato.com/files/272110712/screenshots/01_style1.JPG
