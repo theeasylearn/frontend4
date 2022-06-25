@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container 
+        {
+            padding:10px;
+            background-color: yellow;
+            margin-bottom: 10px;
+            display:grid;
+        }
+        .container>div
+        {
+            background-color: red;
+            color:white;
+            font-size: 3rem;
+            border:1px solid white;
+            height: 50px;
+            text-align: center;
+        }
+        .equal
+        {
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* or */
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .small_large_small
+        {
+            grid-template-columns: 1.5fr 4fr 1.5fr;
+        }
+        .min_max
+        {
+            grid-template-columns:minmax(200px, 1fr)  minmax(300px, 1fr) minmax(200px, 1fr)
+        }
+    </style>
+</head>
+<body>
+    <h3>equal width grid</h3>
+    <div class="container equal">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h3>small large small size grid </h3>
+    <div class="container small_large_small">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+    <h3>min max</h3>
+    <div class="container min_max">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>

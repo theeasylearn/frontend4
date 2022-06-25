@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html    
+        {
+            height: 100%;
+            background-color: aliceblue;
+        }
+        .container 
+        {
+            height: 100%;
+            padding:10px;
+            background-color: yellow;
+            margin-bottom: 10px;
+            display:grid;
+            grid-template-columns: 1fr;
+        }
+        .container>div
+        {
+            background-color: red;
+            color:white;
+            border:1px solid white;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+   <div class="container">
+        <div class="header">
+            <h3>header</h3>
+        </div>
+        <div class="menu">
+            <h3>menu</h3>
+        </div>
+        <div class="banner">
+            <h3>banner</h3>
+        </div>
+        <div class="content">
+            <h3>content</h3>
+        </div>
+        <div class="footer">
+            <h3>footer</h3>
+        </div>
+   </div>
+</body>
+</html>
