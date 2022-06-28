@@ -6,25 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        * 
+        {
+            margin: 0px;
+            padding: 0px;
+        }
         html    
         {
             height: 100%;
-            background-color: aliceblue;
         }
         .container 
         {
-            height: 100%;
-            padding:10px;
-            background-color: yellow;
-            margin-bottom: 10px;
+            height: 100vh;
+            /* background-color: yellow; */
+            /* margin-bottom: 10px; */
             display:grid;
             grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 2fr 4fr 1fr;
         }
         .container>div
         {
-            background-color: red;
-            color:white;
-            border:1px solid white;
+            /* background-color: red; */
+            /* color:white; */
+            border:1px solid black;
             text-align: center;
         }
         

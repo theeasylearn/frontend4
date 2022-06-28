@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding:0px;
+        }
+        .header{
+            grid-area: header;
+        }
+        .menu {
+            grid-area: menu;
+        }
+        .content{
+            grid-area: content;
+        }
+        .news 
+        {
+            grid-area: news;
+        }
+        .advertise
+        {
+            grid-area: advertise;
+            display: flex;
+        }
+        .advertise>div 
+        {
+            width: 50%
+            ;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .container{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 1fr 4fr 1fr 1fr;
+            grid-template-areas: 
+                    "header header header"
+                    "menu content news"
+                    "advertise advertise advertise"
+                    "footer footer footer";
+        }
+        .container>div 
+        {
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+           header
+        </div>
+        <div class="menu">
+            menu
+        </div>
+        <div class="content">
+           content
+        </div>
+        <div class="news">
+            sidebar
+        </div>
+        <div class="advertise">
+            <div class="ad1">ad1</div>
+            <div class="ad2">ad2</div>
+        </div>
+        <div class="footer">
+            footer
+        </div>
+    </div>
+</body>
+</html>
