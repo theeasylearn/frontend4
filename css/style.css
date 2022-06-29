@@ -1,0 +1,83 @@
+*
+{
+    margin: 0px;
+    padding:0px;
+}
+.header{
+    grid-area: header;
+}
+.menu {
+    grid-area: menu;
+}
+.content{
+    grid-area: content;
+}
+.news 
+{
+    grid-area: news;
+}
+.advertise
+{
+    grid-area: advertise;
+    display: flex;
+}
+.advertise>div 
+{
+    width: 50%;
+}
+.footer{
+    grid-area: footer;
+}
+
+.container>div 
+{
+    border:1px solid black;
+}
+
+  /* ##Device = Laptops, Desktops ##Screen = B/w 1025px to 1280px*/
+  @media (min-width: 1025px){
+    /* code in this block will be applied only if device width>1025 and <1280 */
+    .container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 1fr 4fr 1fr 1fr;
+        grid-template-areas: 
+                "header header header"
+                "menu content news"
+                "advertise advertise advertise"
+                "footer footer footer";
+    }
+  }
+  
+  /* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* code in this block will be applied only if device width>768 and <1024 */
+    .container{
+        display: grid;
+        grid-template-columns: 4fr 1.5fr;
+        grid-template-rows: 1fr 1fr 4fr 1fr 1fr;
+        grid-template-areas: 
+                "header header"
+                "menu menu"
+                "content news"
+                "advertise advertise"
+                "footer footer";
+    }
+  }
+  
+  /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */ 
+  @media (min-width: 320px) and (max-width: 767px) 
+  {
+    /* code in this block will be applied only if device width>320 and <480 */
+    .container
+    {
+        display: flex;
+        flex-direction:column;
+    }
+    .advertise
+    {
+        display: flex;
+        flex-direction:column;
+    }
+  }
