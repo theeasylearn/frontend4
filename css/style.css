@@ -42,13 +42,16 @@
     .container{
         display: grid;
         height: 100vh;
-        grid-template-columns: 1fr 4fr 1fr;
-        grid-template-rows: 1fr 4fr 1fr 1fr;
+        grid-template-columns: 1.2fr 4fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas: 
                 "header header header"
                 "menu content news"
                 "advertise advertise advertise"
                 "footer footer footer";
+    }
+    .content>p, .news>.news-box{
+        font-size: 14px;
     }
   }
   
@@ -58,7 +61,8 @@
     .container{
         display: grid;
         grid-template-columns: 4fr 1.5fr;
-        grid-template-rows: 1fr 1fr 4fr 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr 4fr 1fr 1fr; */
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas: 
                 "header header"
                 "menu menu"
@@ -163,4 +167,36 @@ h1,h2,h3,h4,h5,h6
 {
     text-align: center;
     color:white;
+}
+.menu 
+{
+    background-color: #C74146;
+    padding-left: 15%;
+}
+.menu>ul 
+{
+    list-style-image: url('hand.png');
+}
+.menu>ul>li 
+{
+    padding-top:3px;
+    padding-bottom:3px;
+    text-transform: uppercase;
+    font-family: Oswald;
+}
+.menu>ul>li>a:link 
+{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+.menu>ul>li>a:hover
+{
+    text-decoration: underline;
+} 
+.menu>h3 
+{
+    color:white;
+    border-bottom:1px solid white;
 }
