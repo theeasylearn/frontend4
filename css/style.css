@@ -70,6 +70,10 @@
                 "advertise advertise"
                 "footer footer";
     }
+    .menu 
+    {
+        display:;
+    }
   }
   
   /*  ##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px */ 
@@ -87,6 +91,14 @@
         flex-direction:column;
     }
   }
+
+@media screen {
+    .menu 
+    {
+        visibility: hidden;
+        height: 0px;
+    }
+}
 html,body 
 {
     height: 100%;
