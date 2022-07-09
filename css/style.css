@@ -62,17 +62,13 @@
         display: grid;
         grid-template-columns: 4fr 1.5fr;
         /* grid-template-rows: 1fr 1fr 4fr 1fr 1fr; */
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-rows: 100px auto auto auto auto;
         grid-template-areas: 
                 "header header"
                 "menu menu"
                 "content news"
                 "advertise advertise"
                 "footer footer";
-    }
-    .mymenu 
-    {
-        /* display:; */
     }
   }
   
@@ -255,6 +251,11 @@ h1,h2,h3,h4,h5,h6
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+    position: absolute;
+    top:45px;
+    left:0px;
+    background-color: #dc7027;
+    width:100%;
   }
   
   /* menu icon */
@@ -337,5 +338,8 @@ h1,h2,h3,h4,h5,h6
         flex-direction: column;
     }
   }
-  
+.navigation
+{
+  height:0px;
+}
   
