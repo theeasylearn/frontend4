@@ -8,8 +8,11 @@ https://css-tricks.com
 for fonts 
 https://fonts.google.com/
 
-for icons 
+for image icons 
 https://www.iconfinder.com 
 
 offical website for bootstrap 
 https://getbootstrap.com/
+
+for css icons 
+https://fontawesome.com/icons
