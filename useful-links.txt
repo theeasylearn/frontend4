@@ -16,3 +16,6 @@ https://getbootstrap.com/
 
 for css icons 
 https://fontawesome.com/icons
+
+bootstrap cheetsheet
+https://bootstrap-cheatsheet.themeselection.com/
