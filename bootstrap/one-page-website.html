@@ -1,192 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <style>
-        .row>div 
-        {
-            /* border: 1px solid black;
-            min-height: 100px;
-            background-color: aliceblue; */
-            /*  margin: 5px; */
-        }
-    </style>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel = "stylesheet" href = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+  </head>
+  <body>
     <!-- responsive menu -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">The easylearn academy</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="#introduction">Introduction to bootstrap</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#application">Application</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#advantage">Advantage</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#app">App</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#contactus">Contact us</a>
-              </li>
-            </ul>
-          
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">The easylearn academy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-white"
+                aria-current="page"
+                href="#myslider">Introduction to bootstrap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white js-scroll-to" href="#application">Application</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white js-scroll-to" href="#advantage">Advantage</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white js-scroll-to" href="#app">App</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white js-scroll-to" href="#contactus">Contact us</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- responsive menu -->
     <!-- image slider -->
     <div id="myslider" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myslider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myslider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myslider" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#myslider" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#myslider" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://picsum.photos/1200/300" class="d-block w-100" alt="https://picsum.photos/1200/300">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myslider"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myslider"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myslider"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myslider"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myslider"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://picsum.photos/1200/300"
+            class="d-block w-100"
+            alt="https://picsum.photos/1200/300"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
           </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/1200/300" class="d-block w-100" alt="https://picsum.photos/1200/300">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/1200/300" class="d-block w-100" alt="https://picsum.photos/1200/300">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/1200/300" class="d-block w-100" alt="https://picsum.photos/1200/300">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>fourth slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/1200/300" class="d-block w-100" alt="https://picsum.photos/1200/300">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>fifth slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://picsum.photos/1200/300"
+            class="d-block w-100"
+            alt="https://picsum.photos/1200/300"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myslider" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myslider" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>     
-      <!-- image slider -->
-    <div class="container" id="introduction">
-        <div class="row mt-5">
-            <div class="col-12 mt-5">
-                <h2>introduction to bootstrap</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis atque architecto eaque obcaecati rem voluptate nihil beatae ipsa, autem odio animi expedita distinctio in! Iusto error accusamus quisquam. Possimus facilis cupiditate aspernatur minima corrupti, perferendis magnam vel excepturi exercitationem ducimus ad, dolorem vero hic quos odit, aliquam doloribus sapiente commodi? Dignissimos, pariatur deleniti nulla est voluptatibus fuga quis temporibus doloremque vero laboriosam aspernatur rerum consequatur eaque commodi fugiat vitae ullam optio molestias iusto veritatis ipsa perferendis, delectus quasi asperiores! Obcaecati molestiae sunt exercitationem voluptas. Repellat odio provident, nemo odit necessitatibus veritatis esse in perspiciatis animi, facere natus, qui eligendi architecto!</p>
-              
-            </div>
+        <div class="carousel-item">
+          <img
+            src="https://picsum.photos/1200/300"
+            class="d-block w-100"
+            alt="https://picsum.photos/1200/300"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <h3 >application 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos distinctio id molestiae, perspiciatis non voluptatem illo illum dolorum dignissimos, laboriosam veritatis hic, ipsam eius. Quas praesentium, repellendus reiciendis minus repudiandae officia ducimus iure quam mollitia, neque delectus modi debitis, fugit sint eaque excepturi asperiores quae. Delectus suscipit pariatur minima magni.</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <h3>application 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos distinctio id molestiae, perspiciatis non voluptatem illo illum dolorum dignissimos, laboriosam veritatis hic, ipsam eius. Quas praesentium, repellendus reiciendis minus repudiandae officia ducimus iure quam mollitia, neque delectus modi debitis, fugit sint eaque excepturi asperiores quae. Delectus suscipit pariatur minima magni.</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <h3>application 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos distinctio id molestiae, perspiciatis non voluptatem illo illum dolorum dignissimos, laboriosam veritatis hic, ipsam eius. Quas praesentium, repellendus reiciendis minus repudiandae officia ducimus iure quam mollitia, neque delectus modi debitis, fugit sint eaque excepturi asperiores quae. Delectus suscipit pariatur minima magni.</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-12 col-lg-3">
-                <h3>application 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos distinctio id molestiae, perspiciatis non voluptatem illo illum dolorum dignissimos, laboriosam veritatis hic, ipsam eius. Quas praesentium, repellendus reiciendis minus repudiandae officia ducimus iure quam mollitia, neque delectus modi debitis, fugit sint eaque excepturi asperiores quae. Delectus suscipit pariatur minima magni.</p>
-            </div>
+        <div class="carousel-item">
+          <img
+            src="https://picsum.photos/1200/300"
+            class="d-block w-100"
+            alt="https://picsum.photos/1200/300"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>fourth slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <h3 id="advantage">advantage 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit omnis animi veniam sunt tempora rem harum, perferendis nemo provident neque, eos a odit non velit eum molestiae sapiente cumque dolores quidem! Explicabo deleniti commodi maiores expedita blanditiis quos temporibus perspiciatis atque sunt repellendus qui eum quasi dolore neque tempora, accusantium incidunt praesentium aliquid culpa porro fuga facere minima totam.</p>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-4">
-                <h3>advantage 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit omnis animi veniam sunt tempora rem harum, perferendis nemo provident neque, eos a odit non velit eum molestiae sapiente cumque dolores quidem! Explicabo deleniti commodi maiores expedita blanditiis quos temporibus perspiciatis atque sunt repellendus qui eum quasi dolore neque tempora, accusantium incidunt praesentium aliquid culpa porro fuga facere minima totam.</p>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <h3>advantage 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa impedit omnis animi veniam sunt tempora rem harum, perferendis nemo provident neque, eos a odit non velit eum molestiae sapiente cumque dolores quidem! Explicabo deleniti commodi maiores expedita blanditiis quos temporibus perspiciatis atque sunt repellendus qui eum quasi dolore neque tempora, accusantium incidunt praesentium aliquid culpa porro fuga facere minima totam.</p>
-            </div>
+        <div class="carousel-item">
+          <img
+            src="https://picsum.photos/1200/300"
+            class="d-block w-100"
+            alt="https://picsum.photos/1200/300"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>fifth slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <h3 id="app">app 1</h3>
-                <img src="https://picsum.photos/200" class="img-fluid">
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <h3>app 2</h3>
-                <img src="https://picsum.photos/201" class="img-fluid">
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <h3>app 3</h3>
-                <img src="https://picsum.photos/202" class="img-fluid">
-            </div>
-            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
-                <h3>app 4</h3>
-                <img src="https://picsum.photos/203" class="img-fluid">
-            </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#myslider"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#myslider"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- image slider -->
+    <div class="container mt-">
+      <div class="row mt-5">
+        <div class="col-12">
+          <h2 >introduction to bootstrap</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Perspiciatis atque architecto eaque obcaecati rem voluptate nihil
+            beatae ipsa, autem odio animi expedita distinctio in! Iusto error
+            accusamus quisquam. Possimus facilis cupiditate aspernatur minima
+            corrupti, perferendis magnam vel excepturi exercitationem ducimus
+            ad, dolorem vero hic quos odit, aliquam doloribus sapiente commodi?
+            Dignissimos, pariatur deleniti nulla est voluptatibus fuga quis
+            temporibus doloremque vero laboriosam aspernatur rerum consequatur
+            eaque commodi fugiat vitae ullam optio molestias iusto veritatis
+            ipsa perferendis, delectus quasi asperiores! Obcaecati molestiae
+            sunt exercitationem voluptas. Repellat odio provident, nemo odit
+            necessitatibus veritatis esse in perspiciatis animi, facere natus,
+            qui eligendi architecto!
+          </p>
         </div>
-        
+      </div>
+      <div class="row" >
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <h3 id="application">application 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+            distinctio id molestiae, perspiciatis non voluptatem illo illum
+            dolorum dignissimos, laboriosam veritatis hic, ipsam eius. Quas
+            praesentium, repellendus reiciendis minus repudiandae officia
+            ducimus iure quam mollitia, neque delectus modi debitis, fugit sint
+            eaque excepturi asperiores quae. Delectus suscipit pariatur minima
+            magni.
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <h3>application 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+            distinctio id molestiae, perspiciatis non voluptatem illo illum
+            dolorum dignissimos, laboriosam veritatis hic, ipsam eius. Quas
+            praesentium, repellendus reiciendis minus repudiandae officia
+            ducimus iure quam mollitia, neque delectus modi debitis, fugit sint
+            eaque excepturi asperiores quae. Delectus suscipit pariatur minima
+            magni.
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <h3>application 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+            distinctio id molestiae, perspiciatis non voluptatem illo illum
+            dolorum dignissimos, laboriosam veritatis hic, ipsam eius. Quas
+            praesentium, repellendus reiciendis minus repudiandae officia
+            ducimus iure quam mollitia, neque delectus modi debitis, fugit sint
+            eaque excepturi asperiores quae. Delectus suscipit pariatur minima
+            magni.
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-12 col-lg-3">
+          <h3>application 4</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+            distinctio id molestiae, perspiciatis non voluptatem illo illum
+            dolorum dignissimos, laboriosam veritatis hic, ipsam eius. Quas
+            praesentium, repellendus reiciendis minus repudiandae officia
+            ducimus iure quam mollitia, neque delectus modi debitis, fugit sint
+            eaque excepturi asperiores quae. Delectus suscipit pariatur minima
+            magni.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <h3 id="advantage">advantage 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            impedit omnis animi veniam sunt tempora rem harum, perferendis nemo
+            provident neque, eos a odit non velit eum molestiae sapiente cumque
+            dolores quidem! Explicabo deleniti commodi maiores expedita
+            blanditiis quos temporibus perspiciatis atque sunt repellendus qui
+            eum quasi dolore neque tempora, accusantium incidunt praesentium
+            aliquid culpa porro fuga facere minima totam.
+          </p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+          <h3>advantage 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            impedit omnis animi veniam sunt tempora rem harum, perferendis nemo
+            provident neque, eos a odit non velit eum molestiae sapiente cumque
+            dolores quidem! Explicabo deleniti commodi maiores expedita
+            blanditiis quos temporibus perspiciatis atque sunt repellendus qui
+            eum quasi dolore neque tempora, accusantium incidunt praesentium
+            aliquid culpa porro fuga facere minima totam.
+          </p>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+          <h3>advantage 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            impedit omnis animi veniam sunt tempora rem harum, perferendis nemo
+            provident neque, eos a odit non velit eum molestiae sapiente cumque
+            dolores quidem! Explicabo deleniti commodi maiores expedita
+            blanditiis quos temporibus perspiciatis atque sunt repellendus qui
+            eum quasi dolore neque tempora, accusantium incidunt praesentium
+            aliquid culpa porro fuga facere minima totam.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <h3 id="app">app 1</h3>
+          <img src="https://picsum.photos/200" class="img-fluid" />
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <h3>app 2</h3>
+          <img src="https://picsum.photos/201" class="img-fluid" />
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <h3>app 3</h3>
+          <img src="https://picsum.photos/202" class="img-fluid" />
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+          <h3>app 4</h3>
+          <img src="https://picsum.photos/203" class="img-fluid" />
+        </div>
+      </div>
     </div>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                <h1 id="contactus">Contact us</h1>
-                <p>
-                    <b>The Easylearn Academy</b>
-                    <br>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, fuga?
-                </p>
-            </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+          <h1 id="contactus">Contact us</h1>
+          <p>
+            <b>The Easylearn Academy</b>
+            <br />
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam,
+            fuga?
+          </p>
         </div>
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                <img src="https://picsum.photos/128" class="img-fluid"> <br>
-                <img src="https://picsum.photos/32" class="img-fluid">
-                <img src="https://picsum.photos/32" class="img-fluid">
-                <img src="https://picsum.photos/32" class="img-fluid">
-                <img src="https://picsum.photos/32" class="img-fluid">
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+          <img src="https://picsum.photos/128" class="img-fluid" /> <br />
+          <img src="https://picsum.photos/32" class="img-fluid" />
+          <img src="https://picsum.photos/32" class="img-fluid" />
+          <img src="https://picsum.photos/32" class="img-fluid" />
+          <img src="https://picsum.photos/32" class="img-fluid" />
         </div>
+        <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+          <div id="map" style = "width:100%;height:200px"></div>
+        </div>
+      </div>
     </div>
     <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
 
-</body>
+    <!-- for jquery (smooth scrolling effect) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+    <!-- for openstreetmap -->
+    <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    
+    <script>
+      $(function () {
+        $(".js-scroll-to").click(function (e) {
+          var destination = $(this).attr("href");
+          e.preventDefault();
+          $("html, body").animate(
+            {
+              scrollTop: $(destination).offset().top - 50,
+            },
+            500
+          );
+        });
+      });
+      // 21.75402, 72.14374 used to display map
+        var mapOptions = {
+        center: [21.75402,72.14374],
+        zoom: 15
+        }
+        // Creating a map object
+        var map = new L.map('map', mapOptions);
+        // Creating a Layer object
+        var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
+        // Adding layer to the map
+        map.addLayer(layer);
+          let iconOptions = {
+          title:"the easylearn academy",
+          draggable:false,
+          }
+        let marker = new L.Marker([21.75402,72.14374],iconOptions);
+        marker.addTo(map);
+    </script>
+  </body>
 </html>
