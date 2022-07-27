@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!------ Include the above in your HEAD tag ---------->
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:black; padding:0; margin:0;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: white; padding: 60px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1415018255745-0ec3f7aee47b?dpr=1&auto=format&fit=crop&w=1500&h=938&q=80&cs=tinysrgb&crop=); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1432163230927-a32e4fd5a326?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1440688807730-73e4e2169fb8?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-fourth {padding-top: 200px; padding-bottom: 200px; overflow: hidden; position: relative; width: 100%; background-image: url(https://images.unsplash.com/photo-1658732049821-0e5ce13224cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">The easylearn academy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0" >
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Course
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">ReactJS NodeJS</a></li>
+                  <li><a class="dropdown-item" href="#">PHP Laravel</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Flutter</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="#">Contact Us</a>
+              </li>
+            </ul>
+          
+          </div>
+        </div>
+    </nav>
+     <!-- image slider -->
+     <div id="myslider" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myslider"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myslider"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myslider"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myslider"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myslider"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://picsum.photos/1200/300"
+              class="d-block w-100"
+              alt="https://picsum.photos/1200/300"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/1200/300"
+              class="d-block w-100"
+              alt="https://picsum.photos/1200/300"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/1200/300"
+              class="d-block w-100"
+              alt="https://picsum.photos/1200/300"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/1200/300"
+              class="d-block w-100"
+              alt="https://picsum.photos/1200/300"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>fourth slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/1200/300"
+              class="d-block w-100"
+              alt="https://picsum.photos/1200/300"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>fifth slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myslider"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myslider"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- image slider -->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3 class="display-4">Introduction</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt autem minima amet cum quia accusantium perferendis facere omnis ut, quo totam perspiciatis. At nostrum sunt eligendi. Quidem, quo molestiae animi eius sunt nemo, atque recusandae odio praesentium consequuntur aliquid omnis architecto veniam asperiores culpa facere obcaecati? Eaque recusandae dolor officia corporis error, quis illo quaerat omnis, aut ipsum earum similique deserunt, perferendis saepe necessitatibus. Praesentium odio voluptatum ut necessitatibus deleniti, error ea omnis dolorum, accusantium nobis cumque laboriosam! Animi reprehenderit, laborum repellendus iusto voluptate rerum qui voluptatem possimus. Nihil est possimus eos illo odio fugiat aut. Assumenda ipsam ab quasi eos laboriosam, rerum explicabo voluptates ducimus labore quam, quo corporis, qui tenetur hic quas velit minima voluptate doloribus rem? In quasi non ipsum, illo accusantium vero magni fugiat placeat laboriosam voluptate a, dolorum eos nisi, dolore corrupti nihil ab labore perferendis sunt sequi mollitia magnam! Ipsa unde, beatae dolor eaque quaerat deserunt voluptatum repudiandae commodi praesentium iure itaque perferendis esse officia ducimus sint placeat iusto nisi nihil. Blanditiis itaque aspernatur porro hic odio in tempore nihil est corrupti sapiente vero rem, quos corporis nesciunt nobis quaerat voluptatum quisquam minus nemo explicabo. Tenetur tempore doloribus ipsum est asperiores magni, repellendus quae!
+
+            </p>
+        </div>
+    </div>
+</div>
+<div id="parallax-world-of-ugg">
+<section>
+    <div class="parallax-one">
+      <h2>Why work with us</h2>
+    </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row mt-5 mb-5">
+        <div class="col-12">
+            <div class="display-4">some heading goes here</div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quaerat atque veniam dolorem praesentium autem. Aperiam quisquam similique autem id nobis repellat inventore vel consequuntur eum pariatur eaque, labore nostrum dolorum expedita aspernatur ex voluptas eligendi dolore provident hic enim placeat et repellendus. Eius, qui aspernatur! Eveniet iste, veniam, dolorem iusto quibusdam error natus amet omnis itaque a enim nisi officiis fuga consequatur impedit? Hic mollitia, minus neque asperiores odit dicta! Architecto incidunt exercitationem nobis illo? Neque sapiente exercitationem praesentium cum minus enim itaque nobis aliquam modi necessitatibus vitae unde dolores esse voluptas quasi veniam cumque nemo placeat nam, sunt, atque mollitia facilis dicta. Corporis excepturi rerum laborum repellendus blanditiis, hic iusto dolores deserunt quisquam quae voluptatum quis, nisi quasi eos, esse vero? Distinctio atque et totam velit eligendi repellendus minus unde sit assumenda quia, alias suscipit accusantium voluptates molestiae quis dolorum, eos maxime. Odit, neque libero reiciendis dolore animi, sint hic odio, porro consequuntur aliquam iste maiores necessitatibus autem alias quibusdam rem nostrum eum fugit vitae? Enim tempora sequi natus quam. Provident quidem repudiandae, asperiores incidunt, tempore dolorem esse eos sequi ex nisi quia aliquam nemo? Corrupti neque ducimus sint distinctio totam facere at, blanditiis officiis, necessitatibus optio reprehenderit.
+        </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="parallax-two">
+    <h2>NEW YORK</h2>
+  </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col-12">
+                <div class="display-4">some heading goes here</div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quaerat atque veniam dolorem praesentium autem. Aperiam quisquam similique autem id nobis repellat inventore vel consequuntur eum pariatur eaque, labore nostrum dolorum expedita aspernatur ex voluptas eligendi dolore provident hic enim placeat et repellendus. Eius, qui aspernatur! Eveniet iste, veniam, dolorem iusto quibusdam error natus amet omnis itaque a enim nisi officiis fuga consequatur impedit? Hic mollitia, minus neque asperiores odit dicta! Architecto incidunt exercitationem nobis illo? Neque sapiente exercitationem praesentium cum minus enim itaque nobis aliquam modi necessitatibus vitae unde dolores esse voluptas quasi veniam cumque nemo placeat nam, sunt, atque mollitia facilis dicta. Corporis excepturi rerum laborum repellendus blanditiis, hic iusto dolores deserunt quisquam quae voluptatum quis, nisi quasi eos, esse vero? Distinctio atque et totam velit eligendi repellendus minus unde sit assumenda quia, alias suscipit accusantium voluptates molestiae quis dolorum, eos maxime. Odit, neque libero reiciendis dolore animi, sint hic odio, porro consequuntur aliquam iste maiores necessitatibus autem alias quibusdam rem nostrum eum fugit vitae? Enim tempora sequi natus quam. Provident quidem repudiandae, asperiores incidunt, tempore dolorem esse eos sequi ex nisi quia aliquam nemo? Corrupti neque ducimus sint distinctio totam facere at, blanditiis officiis, necessitatibus optio reprehenderit.
+            </div>
+        </div>
+      </div>
+
+<section>
+  <div class="parallax-three">
+    <h2>ENCHANTED FOREST</h2>
+  </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <div class="col-12">
+                <div class="display-4">some heading goes here</div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci quaerat atque veniam dolorem praesentium autem. Aperiam quisquam similique autem id nobis repellat inventore vel consequuntur eum pariatur eaque, labore nostrum dolorum expedita aspernatur ex voluptas eligendi dolore provident hic enim placeat et repellendus. Eius, qui aspernatur! Eveniet iste, veniam, dolorem iusto quibusdam error natus amet omnis itaque a enim nisi officiis fuga consequatur impedit? Hic mollitia, minus neque asperiores odit dicta! Architecto incidunt exercitationem nobis illo? Neque sapiente exercitationem praesentium cum minus enim itaque nobis aliquam modi necessitatibus vitae unde dolores esse voluptas quasi veniam cumque nemo placeat nam, sunt, atque mollitia facilis dicta. Corporis excepturi rerum laborum repellendus blanditiis, hic iusto dolores deserunt quisquam quae voluptatum quis, nisi quasi eos, esse vero? Distinctio atque et totam velit eligendi repellendus minus unde sit assumenda quia, alias suscipit accusantium voluptates molestiae quis dolorum, eos maxime. Odit, neque libero reiciendis dolore animi, sint hic odio, porro consequuntur aliquam iste maiores necessitatibus autem alias quibusdam rem nostrum eum fugit vitae? Enim tempora sequi natus quam. Provident quidem repudiandae, asperiores incidunt, tempore dolorem esse eos sequi ex nisi quia aliquam nemo? Corrupti neque ducimus sint distinctio totam facere at, blanditiis officiis, necessitatibus optio reprehenderit.
+            </div>
+        </div>
+      </div>
+</section>
+<section>
+    <div class="parallax-fourth">
+      <h2>fourth parallax</h2>
+    </div>
+  </section>
+  
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</body>
+</html>
