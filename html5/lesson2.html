@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * 
+        {
+            margin: 0px;
+            padding:0px;
+        }
+        details 
+        {
+            background-color: antiquewhite;
+            margin-bottom: 20px;
+            box-shadow: 5px 5px 5px gray;
+        }
+        details 
+        {
+            font-size: 1.5rem;
+            line-height: 200%;
+            letter-spacing: 1px;
+        }
+        summary
+        {
+            background-color: brown;
+            color:white;
+            font-size: 2rem;
+        }
+        .gallary 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        figure 
+        {
+            background-color: aliceblue;
+            padding:15px;
+            box-shadow: 5px 5px 5px gray;
+            border-radius: 10px;
+        }
+        figcaption
+        {
+            text-align: center;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>important tag in html 5</h1>
+    <h3>Details </h3>
+    <details>
+        <summary>Click to fold/unfold</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, tenetur. Labore, optio dolorum quisquam ullam obcaecati explicabo delectus numquam laboriosam iste harum, fugit perferendis, minima temporibus recusandae facilis. Facilis iusto quidem soluta. Illum, ducimus ad quam repellendus enim laborum aperiam? Aliquid numquam dolorum ullam praesentium! Placeat a perferendis nesciunt exercitationem?</p>
+    </details>
+    <details>
+        <summary>Click to fold/unfold</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, tenetur. Labore, optio dolorum quisquam ullam obcaecati explicabo delectus numquam laboriosam iste harum, fugit perferendis, minima temporibus recusandae facilis. Facilis iusto quidem soluta. Illum, ducimus ad quam repellendus enim laborum aperiam? Aliquid numquam dolorum ullam praesentium! Placeat a perferendis nesciunt exercitationem?</p>
+    </details>
+    <details>
+        <summary>Click to fold/unfold</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, tenetur. Labore, optio dolorum quisquam ullam obcaecati explicabo delectus numquam laboriosam iste harum, fugit perferendis, minima temporibus recusandae facilis. Facilis iusto quidem soluta. Illum, ducimus ad quam repellendus enim laborum aperiam? Aliquid numquam dolorum ullam praesentium! Placeat a perferendis nesciunt exercitationem?</p>
+    </details>
+    <hr>
+    <h3>mark tag example</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi at, aut quam officiis aspernatur a illo harum autem rerum <mark>repellendus obcaecati dolorem et esse iure rem sit praesentium mollitia </mark>fugit eveniet molestias sint eaque exercitationem totam! Aperiam quia ad nulla officiis provident, temporibus fugit tempore numquam autem voluptatum ea reiciendis?</p>
+    <h3>Dataset</h3> <hr>
+    <input type="text" placeholder="city" list="city">
+    <datalist id="city">
+        <option value="bhavnagar">
+        <option value="baroda">
+        <option value="bombay">
+        <option value="banglore">
+        <option value="ahmedabad">
+        <option value="agra">
+        <option value="agartala">
+    </datalist>
+    <h3>Figure & figcaption</h3>
+    <div class="gallary">
+        <figure>
+            <img src="https://picsum.photos/300" alt="">
+            <figcaption>T-shirt</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/300" alt="">
+            <figcaption>Jeans</figcaption>
+        </figure>
+        <figure>
+            <img src="https://picsum.photos/300" alt="">
+            <figcaption>wallet</figcaption>
+        </figure>
+    </div>
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="audio/one.mp3" type="audio/mpeg" />
+        <source src="audio/one.wav" type="audio/wav" />
+        <embed src="audio/one.mp3" type="application/x-mplayer2" autostart="true">
+    </audio>
+    <h3>video</h3>480
+    <video height="360" width="640" controls>
+        <source src="video/earth.mp4" type="audio/mpeg" />
+    </video>
+</body>
+</html>
