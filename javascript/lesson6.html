@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <span id="title"></span>
+    <hr>
+    <h4 id="address"></h4> <hr>
+    <h6 id="city">Bhavnagar</h6>
+    good bye....
+    <script>
+        var message = prompt("what is your name");
+        document.getElementById("title").innerHTML = "<h1>" + message + "</h1>";
+
+        var address = prompt("what is your address?");
+        document.getElementById("address").innerText = address;
+        var city = document.getElementById("city").innerHTML;
+        alert(city);
+    </script>
+</body>
+</html>
