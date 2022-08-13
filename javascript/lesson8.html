@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header text-bg-secondary">
+                        <h3>Example of arrow function</h3> <hr>
+                        <h6>Basic Mathamatical calculator</h6>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="first1">First number</span>
+                                <input type="number" class="form-control" aria-label="Large input group" aria-describedby="input-group-lg" id="first">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="second1">Second number</span>
+                                <input type="number" class="form-control" aria-label="Large input group" aria-describedby="input-group-lg" id="second">
+                              </div>
+                            <button type="button" id="addition"
+                              class="btn btn-primary" 
+                              onclick="add()">
+                              Addition
+                            </button>
+                            <button type="button" id="substraction"
+                              class="btn btn-secondary" 
+                              onclick="sub()">
+                             Substraction
+                            </button>
+                            <button type="button" id="multiplication"
+                              class="btn btn-info" 
+                              onclick="mul()">
+                             Multiplication
+                            </button>
+                            <button type="button" id="division"
+                              class="btn btn-success" 
+                              onclick="div()">
+                             Division
+                            </button>
+                              <button type="reset" class="btn btn-white">clear all</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="myscript.js"></script>
+    <script>
+        let add = function(){
+            log("addition");
+            html("addition",addition(_("first"),_("second")));
+        }
+
+        let mul = function(){
+            log("multiplication");
+            html("multiplication",multiplication(_("first"),_("second")));
+
+        }
+
+        let div = function(){
+            log("division");
+            html("division",division(_("first"),_("second")));
+        }
+
+        let sub = function(){
+            log("substraction");
+            html("substraction",substraction(_("first"),_("second")));
+
+        }
+    </script>
+</body>
+</html>

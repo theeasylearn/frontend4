@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header text-bg-primary">
+                        <h3>Example of function</h3> <hr>
+                        <h6>Area calculator</h6>
+                    </div>
+                    <div class="card-body">
+                        <form action="">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="length1">Length</span>
+                                <input type="number" class="form-control" aria-label="Large input group" aria-describedby="input-group-lg" id="length">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="width1">Width</span>
+                                <input type="number" class="form-control" aria-label="Large input group" aria-describedby="input-group-lg" id="width">
+                              </div>
+                              <button type="button" class="btn btn-primary" onclick="calculate_area()">Calculate Area</button>
+                              <button type="reset" class="btn btn-white">clear all</button>
+                            <div class="h3 pt-3 text-center text-danger" id="output">
+                                output will be displayed here
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="myscript.js"></script>
+    <script>
+        function calculate_area()
+        {
+            var length,width;
+            length = _("length");
+            width =  _("width");
+            console.log(length + " " + width);
+            var area = parseInt(length) * parseInt(width);
+            console.log(area);
+            html('output',"output is " + area);
+        }
+    </script>
+</body>
+</html>
