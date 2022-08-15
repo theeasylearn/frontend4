@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-2">
+                    <form action="">
+                    <div class="card">
+                        <div class="card-header text-bg-danger">
+                            <h4>Global variable & default arguments concepts</h4>
+                        </div>
+                        <div class="card-body">
+                           
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="base" placeholder="Base">
+                                    <label for="base">Base</label>
+                                  </div>
+                                  <div class="form-floating">
+                                    <input type="number" class="form-control" id="exponent" placeholder="exponent">
+                                    <label for="exponent">Exponent</label>
+                                  </div>
+                                  <div id="output"></div>
+                        
+                        <div class="card-footer d-flex justify-content-end">
+                            <button type="button" class="btn btn-danger" onclick="showPower();">Get Power</button>&nbsp;
+                            <button type="reset" class="btn btn-secondary">Clear all</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="myscript.js"></script>
+<script>
+    var power = 0; //global variable 
+
+    let getPower = function(base,exponent=2){
+        let temp = Math.pow(base,exponent);
+        return temp;
+    }
+    let showPower = function(){
+        log("getPower clicked......");
+        var base = 0, exponent = 0; 
+        base = _("base"); //return value of the html input tag whose id is base
+        exponent = _("exponent"); // //return value of the html input tag whose id is exponent
+        log(exponent);
+        base = parseInt(base);
+        if(exponent!="")
+        {
+            exponent = parseInt(exponent);
+            power = getPower(base,exponent);
+            html("output","power is " + power);
+        }
+        else 
+        {
+            power = getPower(base);
+            html("output","power is " + power);
+        }
+        $("output").className = "alert alert-danger mt-2";
+    }
+</script>
+</body>
+</html>
