@@ -15,9 +15,9 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3></h3>
+                        <h3>1st of creating object</h3>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body" id="output">
                         
                     </div>
                 </div>
@@ -27,6 +27,19 @@
     <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script>
+        //create object 
+        const course = {
+            'name':'Javascript',
+            'trainer':'Ankit Patel',
+            'duration_in_days':90,
+            'fees':4511.11
+        };
+        console.log(course);
+        //1st way to access state/variable of object 
+        document.getElementById('output').innerHTML = course.name + "<br/>" + course.trainer + "<br/>" + course.duration_in_days + "<br/>" + course.fees;
 
+        document.getElementById('output').innerHTML += "<br/>" + course['name'] + "<br/>" + course['trainer'] + "<br/>" + course['duration_in_days'] + "<br/>" + course['fees'];
+    </script>
 </body>
 </html>
