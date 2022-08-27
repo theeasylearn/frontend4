@@ -15,11 +15,9 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            
+                            <h3>3rd way of creating object</h3>
                         </div>
-                        <div class="card-body" id="output">
-                            
-                        </div>
+                        <div class="card-body" id="output"></div>
                     </div>
                 </div>
             </div>
@@ -30,8 +28,36 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="myscript.js"></script>
 <script>
-    
+    //how to create object using function 
+    function Student()
+    {
+        this.name = "Kushang";
+        this.rollno = 10;
+        this.age = 22;
+        this.weight = 50.99;
 
+        //function 
+        this.display = function()
+        {
+            document.getElementById("output").innerHTML = "Name " + this.name
+            + "<br/> rollno " + this.rollno + "<br/>age = " + this.age + "<br/> weight = " + this.weight;
+        }
+    }
+
+    //create object type variable
+    //variable-name = new Objectname()
+    s1 = new Student();
+    s1.display();
+    console.log(s1.name);
+    console.log(s1.age);
+    console.log(s1.rollno);
+    console.log(s1.weight);
+
+    console.log(s1['name']);
+    console.log(s1['age']);
+    console.log(s1['rollno']);
+    console.log(s1['weight']);
+    
 </script>
 </body>
 </html>

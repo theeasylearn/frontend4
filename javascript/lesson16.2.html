@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>3rd way of creating object</h3>
+                        </div>
+                        <div class="card-body" id="output"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="myscript.js"></script>
+<script>
+    //how to create object using function 
+    function Student(name,rollno,age,weight)
+    {
+        //this.name means member variable of Student object
+        //name means argument in function 
+        this.name = name;
+        this.rollno = rollno;
+        this.age = age;
+        this.weight = weight;
+
+        //function 
+        this.display = function()
+        {
+            document.getElementById("output").innerHTML += "<br/> Name " + this.name
+            + "<br/> rollno " + this.rollno + "<br/>age = " + this.age + "<br/> weight = " + this.weight;
+        }
+    }
+
+    var name = 'jaysinh', age = 23, weight = 66.22, rollno = 11;
+    
+    //create object type variable
+    //variable-name = new Objectname()
+    s1 = new Student(name,rollno,age,weight);
+    s1.display();
+    console.log(s1.name);
+    console.log(s1.age);
+    console.log(s1.rollno);
+    console.log(s1.weight);
+    
+    name = 'darshan';
+    age = 20;
+    weight = 50.11;
+    rollno = 5;
+
+    s2 = new Student(name,rollno,age,weight);
+    s2.display();
+    console.log(s2.name);
+    console.log(s2.age);
+    console.log(s2.rollno);
+    console.log(s2.weight);
+</script>
+</body>
+</html>
