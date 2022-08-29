@@ -31,7 +31,24 @@
 <script src="myscript.js"></script>
 <script>
     //ES6 way to create object
-    class 
+    class Movie{
+        constructor(name,year,starcast)
+        {
+            console.log("constructor called....");
+            this.name = name;
+            this.year = year;
+            this.starcast = starcast;
+            console.log("constructor executed successfully");
+        }
+        display()
+        {
+            document.getElementById("output").innerHTML += "<p>Name " + this.name + "<br/> year " + this.year + "<br/> starcast " + this.starcast + "</p>";
+        }
+    }
+    var m1 = new Movie('Bahubali',2016,'bahubali and Katappa');
+    var m2 = new Movie('KGF',2022,'Yash and sanjaydutt & ravina tondon');
+    m1.display();
+    m2.display();
 </script>
 </body>
 </html>
