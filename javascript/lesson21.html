@@ -30,6 +30,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="myscript.js"></script>
 <script>
+    //hirachical inheritance
     //ES 6 way to create class
     //base / super / parent
     class Person{
@@ -84,17 +85,32 @@
             this.write();
         }
     }
-    //create object variable using class 
-    var s1 = new Student('Darshan','JavaScript');
-    // s1.walk();
-    // s1.talk();
-    // s1.eat();
-    // s1.read();
-    // s1.write();
-    s1.WhatCanIDo();
+    class Teacher extends Person
+    {
+        constructor(name,experience)
+        {
+            super(name);
+            this.experience = experience;
+        }
+        work()
+        {
+            var message = `<p>${this.name} has experence of ${this.experience} of teaching</p>`;
+            document.getElementById("output").innerHTML += message;
+        }
+        WhatCanIDo()
+        {
+            super.walk();
+            super.talk();
+            super.eat();
+            this.work();
+        }
+    }
 
-    var s2 = new Student('Jaysing','React JS');
-    s2.WhatCanIDo();
+    var t1 = new Teacher('Shiv Patel',6);
+    t1.WhatCanIDo();
+
+    var s1 = new Student('Krishna patel','Javascript');
+    s1.WhatCanIDo();
 </script>
 </body>
 </html>
