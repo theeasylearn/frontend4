@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Single level inheritance</h3>
+                        </div>
+                        <div class="card-body" id="output">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="myscript.js"></script>
+<script>
+    //hybrid inheritance
+    //ES 6 way to create class
+    //base / super / parent
+    class Person{
+        constructor(name)
+        {
+            //this.name is property, we can access such property from any method of same or derived class 
+            this.name = name;
+            console.log("Person class constructor called....");
+        }
+        walk()
+        {
+            var message = `<p>${this.name} can walk</p>`; //local variable can be accessed only in this method
+            document.getElementById("output").innerHTML += message;
+        }
+        talk()
+        {
+            var message = `<p>${this.name} can talk</p>`;
+            document.getElementById("output").innerHTML += message;
+        }
+        eat()
+        {
+            var message = `<p>${this.name} can eat</p>`;
+            document.getElementById("output").innerHTML += message;
+        }
+    }
+
+    //child / derived / sub
+    class Student extends Person
+    {
+        constructor(name,subject)
+        {
+            super(name); //calling parent class constructor
+            this.subject = subject;
+            console.log("Student class constructor called...");
+        }
+        read()
+        {
+            var message = `<p>${this.name} can read ${this.subject}</p>`;
+            document.getElementById("output").innerHTML += message;
+        }
+        write()
+        {
+            var message = `<p>${this.name} can write code in ${this.subject}</p>`;
+            document.getElementById("output").innerHTML += message;
+        }
+        WhatCanIDo()
+        {
+            super.walk();
+            super.talk();
+            super.eat();
+            this.read();
+            this.write();
+        }
+    }
+    class Teacher extends Person
+    {
+        constructor(name,experience)
+        {
+            super(name);
+            this.experience = experience;
+        }
+        work()
+        {
+            var message = `<p>${this.name} has experence of ${this.experience} of teaching</p>`;
+            document.getElementById("output").innerHTML += message;
+        }
+        WhatCanIDo()
+        {
+            super.walk();
+            super.talk();
+            super.eat();
+            this.work();
+        }
+    }
+    class Developer extends Student
+    {
+        constructor(name,subject,platform)
+        {
+            super(name,subject); //calling parent class constructor Student
+            this.platform = platform;
+            console.log('Developer class constructor called...');
+        }
+        work()
+        {
+            var message = `${this.name} works on ${this.platform}`;
+            document.getElementById('output').innerHTML += message;
+        }
+        //Method Overridding (redefine method)
+        WhatCanIDo()
+        {
+            super.WhatCanIDo(); //calling parent class what can i do method
+            this.work();
+        }
+    }
+    var t1 = new Teacher('Shiv Patel',6);
+    t1.WhatCanIDo();
+
+    var s1 = new Student('Krishna patel','Javascript');
+    s1.WhatCanIDo();
+
+    var d1 = new Developer('Ram Patel','React & node js','Web application development'); // calling developer class constructor 
+
+    d1.WhatCanIDo();
+d1.WhatCanIDo(); 
+</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>concept of empty objects</h3>
+                        </div>
+                        <div class="card-body" id="output">
+                            <b>use console to see output</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="myscript.js"></script>
+<script>
+    //create empty object 
+    let person = {};
+
+    //another way to create empty object 
+    let book = new Object();
+    console.log("empty objects");
+    console.log("Person object has");
+    console.log(person);
+    console.log("Book object has");
+    console.log(book);
+    book['name'] = 'how to write code';
+    book['author'] = 'ankit patel';
+    book['price'] = 100;
+    console.log("now Book has ");
+    console.log(book);
+
+    person.name = 'Jiya Patel';
+    person.age = 10;
+    person.weight = 21.25;
+    console.log("now Person has ");
+    console.log(person);
+    if(person.email ===undefined)
+    {
+        console.log("email not found in person");
+    }
+    else 
+    {
+        console.log("email found in person");
+    }
+
+    if("isbn" in book)
+    {
+        console.log("isbn found in book");
+    }
+    else 
+    {
+        console.log("isbn not found in book");
+    }
+</script>
+</body>
+</html>
