@@ -1,0 +1,7 @@
+Write a program to create arrow function that return simple interest of given amount, rate, year
+
+write a program to create arrow function that return negative number into positive number 
+
+write a program to create map on array that convert negative numbers into positive numbers and store in the same array. 
+
+write a program to create map on array that convert odd numbers into even numbers by adding 1 into it otherwise return even number as it is 
