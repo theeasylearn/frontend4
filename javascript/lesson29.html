@@ -15,10 +15,10 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3></h3>
+                            <h3>ES6 Spread Operator</h3>
                         </div>
                         <div class="card-body" id="output">
-                            
+                            <b>use console to see output</b>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,27 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="myscript.js"></script>
 <script>
-
+    let oddnumbers = [1,3,5,7,9,11];
+    let evennumber = [2,4,6,8,10];
+    console.log(oddnumbers);
+    console.log(evennumber);
+    let numbers = [...oddnumbers,...evennumber];
+    console.log(numbers);
+    let person = {
+        name : "Ankit Patel",
+        age : 38,
+        gender : true,
+        email : 'ankit3385@gmail.com'
+    }
+    let teacher = {
+        subject : "React JS",
+        age : 39,
+        email : 'ankit.patel@gmail.com'
+    }
+    console.log(person);
+    console.log(teacher);
+    let TeacherPerson = {...person,...teacher};
+    console.log(TeacherPerson);
 </script>
 </body>
 </html>
