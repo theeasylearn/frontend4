@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Working with cookies</h3>
+                        </div>
+                        <div class="card-body">
+                            <form action="">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="cookies name">
+                                    <label for="floatingInput">cookies name</label>
+                                  </div>
+                                  <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="value" placeholder="cookies value">
+                                    <label for="floatingPassword">cookies value</label>
+                                  </div>
+                                  <div class=" d-flex justify-content-end">
+                                    <button id="write" type="button" class="btn btn-primary mb-3">Create Cookie</button>&nbsp;
+                                    <button id="read" type="button" class="btn btn-danger">Read Cookie</button>
+                                  </div>
+                                  <div id="output">
+
+                                  </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/20994dd270.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="myscript.js"></script>
+<script>
+    //event handling
+    let write = document.getElementById("write");
+    let read = document.getElementById("read");
+    let KeyName = document.getElementById("name");
+    let KeyValue = document.getElementById("value");
+    let output = document.getElementById("output");
+
+    write.addEventListener("click",function(){
+        console.log("write event triggered....");
+        //create cookie
+        setCookie(KeyName.value,KeyValue.value);
+        output.innerHTML = "Cookie created.....";
+        KeyName.value = "";
+        KeyValue.value = "";
+    },false);
+
+    read.addEventListener("click",function(){
+        console.log("read event triggered....");
+        var CookieValue = getCookie(KeyName.value);
+        KeyValue.value = CookieValue;
+        output.innerHTML = "Cookie Fetched.....";
+    },false);
+
+</script>
+</body>
+</html>
