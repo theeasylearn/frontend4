@@ -1,0 +1,5 @@
+Create React app for Register 
+    acccept email,mobile,password,dob from user 
+    use bootstrap 
+Create React app for your resume using bootstrap
+Create React for Image Gallary using bootstrap
