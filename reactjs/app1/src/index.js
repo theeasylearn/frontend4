@@ -55,30 +55,78 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 //         </div>
 //     </div>
 // );
-const Page = (
-    <div className='container'>
-        <div className='row mt-5'>
-            <div className='col-lg-6 offset-3'>
-                <div className='card shadow'>
-                    <div className='card-header text-bg-primary'>
-                        <h3>Login Form</h3>
-                    </div>
-                    <div className='card-body'>
-                        <form>
-                            <div className='mb-3'>
-                                <input type='email' className='form-control' placeholder='Email' />
-                            </div>
-                            <div className='mb-3'>
-                                <input type='password' className='form-control' placeholder='password' />
-                            </div>
-                            <div>
-                                <button className='btn btn-primary'>Login</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
+// const Page = (
+//     <div className='container'>
+//         <div className='row mt-5'>
+//             <div className='col-lg-6 offset-3'>
+//                 <div className='card shadow'>
+//                     <div className='card-header text-bg-primary'>
+//                         <h3>Login Form</h3>
+//                     </div>
+//                     <div className='card-body'>
+//                         <form>
+//                             <div className='mb-3'>
+//                                 <input type='email' className='form-control' placeholder='Email' />
+//                             </div>
+//                             <div className='mb-3'>
+//                                 <input type='password' className='form-control' placeholder='password' />
+//                             </div>
+//                             <div>
+//                                 <button className='btn btn-primary'>Login</button>
+//                             </div>
+//                         </form>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+// )
+// function getGender(student)
+// {
+//     if(student.gender==true)
+//         return <b>Male</b>
+//     else 
+//         return <b>Female</b>
+// }
+// function DisplayDetail(student)
+// {
+//     return(
+//         <div className='container'>
+//         <div className='row'>
+//             <div className='col-6'>
+//                 <h1>Student Detail</h1>
+//                 <ul className='list-group'>
+//                     <li className='list-group-item'>Name : {student.name}</li>
+//                     <li className='list-group-item'>Age : {student.age}</li>
+//                     <li className='list-group-item'>Weight : {student.weight}</li>
+//                     <li className='list-group-item'>gender : {getGender(student)}</li>
+//                 </ul>
+//             </div>
+//         </div>
+//     </div>
+//     );
+// }
+// let student = {
+//     name: "Divya boghra",
+//     age : 21,
+//     weight : 50.22,
+//     gender: false
+// }
+function DisplayCurrentDateTime()
+{
+    var output = (
+        <div className='container'>
+        <div className='row'>
+            <div className='col-12'>
+                <h1>Date & time</h1>
+                <hr/>
+                <button className='btn btn-primary'>{new Date().toLocaleTimeString()}</button>
+                <hr/>
+                <button className='btn btn-danger'>{new Date().getDate()} - {new Date().getMonth()} - {new Date().getFullYear()}</button>
             </div>
         </div>
     </div>
-)
-root.render(Page);
+    )
+    root.render(output)
+}
+setInterval(DisplayCurrentDateTime,1000);
