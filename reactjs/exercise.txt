@@ -3,3 +3,13 @@ Create React app for Register
     use bootstrap 
 Create React app for your resume using bootstrap
 Create React for Image Gallary using bootstrap
+
+Create Following functional components using bootstrap
+    Header
+    Body (will display 12 player details using player functional components. each player has name, runs, matches,100s,photos(to be displayed from internet))
+    Footer 
+
+Create Following functional components using bootstrap
+    Header
+    Body (will display 12 product details using product functional components. each product has name, price,description,photo(to be displayed from internet))
+    Footer 
