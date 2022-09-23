@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import Subject from './Subject';
 import './index.css';
 //create class component
 // class Page extends React.Component
@@ -49,37 +50,37 @@ import './index.css';
 //     );
 //   }
 // }
-class Page extends React.Component
-{
-  constructor(props)
-  {
-      super(props);
-      this.state = {
-        name: 'The EasyLearn Academy',
-        contact: '9662512857',
-        year : 2008
-      }
-  }
-  render(){
-    return(
-      <div className='container'>
-          <div className='row'>
-              <div className='col-12'>
-                 <div className='card'>
-                    <div className='card-header'>
-                        <h3>Class Name  {this.state.name}</h3>
-                    </div>
-                    <div className='card-body'>
-                        <b>contact no :- {this.state.contact}</b> <br/>
-                        <b>Year :- {this.state.year}</b> <br/>
-                    </div>
-                 </div>
-              </div>
-          </div>
-      </div>
-    );
-  }
-}
+// class Page extends React.Component
+// {
+//   constructor(props)
+//   {
+//       super(props);
+//       this.state = {
+//         name: 'The EasyLearn Academy',
+//         contact: '9662512857',
+//         year : 2008
+//       }
+//   }
+//   render(){
+//     return(
+//       <div className='container'>
+//           <div className='row'>
+//               <div className='col-12'>
+//                  <div className='card'>
+//                     <div className='card-header'>
+//                         <h3>Class Name  {this.state.name}</h3>
+//                     </div>
+//                     <div className='card-body'>
+//                         <b>contact no :- {this.state.contact}</b> <br/>
+//                         <b>Year :- {this.state.year}</b> <br/>
+//                     </div>
+//                  </div>
+//               </div>
+//           </div>
+//       </div>
+//     );
+//   }
+// }
 class Movie extends React.Component
 {
   constructor(props)
@@ -129,5 +130,23 @@ function Cinema()
       </div>
     )
 }
+function Course()
+{
+    return (
+      <div className='container'>
+        <div className='row mb-3'>
+            <div className='col-12'>
+                <h3>Course subjects</h3> <hr/>
+            </div>
+        </div>
+        <div className='row'>
+              <Subject name='React js' duration='30' />
+              <Subject name='Node js' duration='30' />
+              <Subject name='Bootstrap' duration='15' />
+              <Subject name='css' duration='15' />
+        </div>
+      </div>
+    )
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Cinema />); 
+root.render(<Course />); 
