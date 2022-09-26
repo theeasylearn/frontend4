@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Movie from './Movie';
+import Marks from './Marks';
 import './index.css';
 //create class component
 // class Page extends React.Component
@@ -148,18 +148,45 @@ import './index.css';
 //       </div>
 //     )
 // }
-function MoviePage()
+// function MoviePage()
+// {
+//     return(
+//       <div className='container'>
+//         <div className='row'>
+//             <Movie name='Bahubali' year='2016' photo='https://picsum.photos/300?random=1' /> 
+//             <Movie name='KGF' year='2019' photo='https://picsum.photos/300?random=2' />
+//             <Movie name='Pushpa' year='2021' photo='https://picsum.photos/300?random=3' />
+//             <Movie name='RRR' year='2022' photo='https://picsum.photos/300?random=4' />
+//         </div>
+//       </div>
+//     )
+// }
+function MarkSheet()
 {
     return(
       <div className='container'>
+
         <div className='row'>
-            <Movie name='Bahubali' year='2016' photo='https://picsum.photos/300?random=1' /> 
-            <Movie name='KGF' year='2019' photo='https://picsum.photos/300?random=2' />
-            <Movie name='Pushpa' year='2021' photo='https://picsum.photos/300?random=3' />
-            <Movie name='RRR' year='2022' photo='https://picsum.photos/300?random=4' />
+          <div className='col-12'>
+              <h3>Example of how to change state from dynamic input?</h3>
+          </div>
+        </div>
+        <div className='row'>
+        <table border='2' width='100%' className='table table-bordered'>
+            <tr>
+                <th width='20%'>Maths</th>
+                <th width='20%'>Science</th>
+                <th width='20%'>English</th>
+                <th width='20%'>Total</th>
+                <th width='20%'>average</th>
+            </tr>      
+            <Marks maths="0" science="0" english="0" />
+            <Marks maths="0" science="0" english="0" />
+            <Marks maths="0" science="0" english="0" />
+        </table>
         </div>
       </div>
     )
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<MoviePage />); 
+root.render(<MarkSheet   />); 
