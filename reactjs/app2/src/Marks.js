@@ -11,29 +11,34 @@ class Marks extends Component {
          }
     }
     CalculateResult = () => {
+        this.state.total = this.state.maths + this.state.science + this.state.english;
+        this.state.average = (this.state.total / 3).toFixed(2);
         this.setState({
-            total: this.state.maths + this.state.science + this.state.english
+            total: this.state.total,
+            average : this.state.average
         });
     }
     UpdateMath = (event) =>{
+        this.state.maths = parseInt(event.target.value);
         this.setState({
-            maths:parseInt(event.target.value)
+            maths: this.state.maths
         });
         this.CalculateResult();
     }
     UpdateScience = (event) =>{
+        this.state.science = parseInt(event.target.value);
         this.setState({
-            science:parseInt(event.target.value)
+            science:this.state.science
         });
         this.CalculateResult();
     }
     UpdateEnglish = (event) =>{
+        this.state.english = parseInt(event.target.value);
         this.setState({
-            english:parseInt(event.target.value)
+            english:this.state.english
         });
         this.CalculateResult();
     }
-    
     render() { 
         return ( 
                 <tr>

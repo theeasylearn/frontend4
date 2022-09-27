@@ -173,16 +173,21 @@ function MarkSheet()
         </div>
         <div className='row'>
         <table border='2' width='100%' className='table table-bordered'>
-            <tr>
-                <th width='20%'>Maths</th>
-                <th width='20%'>Science</th>
-                <th width='20%'>English</th>
-                <th width='20%'>Total</th>
-                <th width='20%'>average</th>
-            </tr>      
-            <Marks maths="0" science="0" english="0" />
-            <Marks maths="0" science="0" english="0" />
-            <Marks maths="0" science="0" english="0" />
+            <thead>
+                <tr>
+                    <th width='20%'>Maths</th>
+                    <th width='20%'>Science</th>
+                    <th width='20%'>English</th>
+                    <th width='20%'>Total</th>
+                    <th width='20%'>average</th>
+                </tr>   
+            </thead>   
+            <tbody>
+              <Marks maths="0" science="0" english="0" />
+              <Marks maths="0" science="0" english="0" />
+              <Marks maths="0" science="0" english="0" />
+            </tbody>
+            
         </table>
         </div>
       </div>
