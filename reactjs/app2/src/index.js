@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Marks from './Marks';
+import MyLifeCycle from './LifeCycleDemo.js';
 import './index.css';
 //create class component
 // class Page extends React.Component
@@ -161,37 +161,37 @@ import './index.css';
 //       </div>
 //     )
 // }
-function MarkSheet()
-{
-    return(
-      <div className='container'>
+// function MarkSheet()
+// {
+//     return(
+//       <div className='container'>
 
-        <div className='row'>
-          <div className='col-12'>
-              <h3>Example of how to change state from dynamic input?</h3>
-          </div>
-        </div>
-        <div className='row'>
-        <table border='2' width='100%' className='table table-bordered'>
-            <thead>
-                <tr>
-                    <th width='20%'>Maths</th>
-                    <th width='20%'>Science</th>
-                    <th width='20%'>English</th>
-                    <th width='20%'>Total</th>
-                    <th width='20%'>average</th>
-                </tr>   
-            </thead>   
-            <tbody>
-              <Marks maths="0" science="0" english="0" />
-              <Marks maths="0" science="0" english="0" />
-              <Marks maths="0" science="0" english="0" />
-            </tbody>
+//         <div className='row'>
+//           <div className='col-12'>
+//               <h3>Example of how to change state from dynamic input?</h3>
+//           </div>
+//         </div>
+//         <div className='row'>
+//         <table border='2' width='100%' className='table table-bordered'>
+//             <thead>
+//                 <tr>
+//                     <th width='20%'>Maths</th>
+//                     <th width='20%'>Science</th>
+//                     <th width='20%'>English</th>
+//                     <th width='20%'>Total</th>
+//                     <th width='20%'>average</th>
+//                 </tr>   
+//             </thead>   
+//             <tbody>
+//               <Marks maths="0" science="0" english="0" />
+//               <Marks maths="0" science="0" english="0" />
+//               <Marks maths="0" science="0" english="0" />
+//             </tbody>
             
-        </table>
-        </div>
-      </div>
-    )
-}
+//         </table>
+//         </div>
+//       </div>
+//     )
+// }
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<MarkSheet   />); 
+root.render(<MyLifeCycle   />); 
