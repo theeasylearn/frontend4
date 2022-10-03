@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import EventHandlingTechnique2 from './AnotherEventHandlingMechanism';
+import ConditionalRendering from './ConditionalRendering';
 import './index.css';
 //create class component
 // class Page extends React.Component
@@ -193,17 +193,27 @@ import './index.css';
 //       </div>
 //     )
 // }
-function FacebookPage()
+// function FacebookPage()
+// {
+//     return(
+//         <div className='container mt-3'>
+//             <div className='row'>
+//                 <EventHandlingTechnique2 />
+//                 <EventHandlingTechnique2 />
+//                 <EventHandlingTechnique2 />
+//             </div>
+//         </div>
+//     )
+// }
+function ConditionRenderingDemo()
 {
     return(
         <div className='container mt-3'>
             <div className='row'>
-                <EventHandlingTechnique2 />
-                <EventHandlingTechnique2 />
-                <EventHandlingTechnique2 />
+                <ConditionalRendering />
             </div>
         </div>
     )
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<FacebookPage />); 
+root.render(<ConditionRenderingDemo />); 

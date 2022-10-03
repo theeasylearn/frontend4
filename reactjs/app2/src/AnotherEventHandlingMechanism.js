@@ -12,7 +12,7 @@ class EventHandlingTechnique2 extends Component {
         console.log('changeLabel method is called...');
         this.setState(previousState =>(
             {
-                isLike : !previousState.isLike
+                isLike : !previousState.isLike,
             }
         ));
         if(this.state.isLike==0)
@@ -28,6 +28,10 @@ class EventHandlingTechnique2 extends Component {
             });
         }
     }
+    ShareDetail(id,name)
+    {
+        console.log(id,name);
+    }
     render() 
     { 
         return (
@@ -40,12 +44,12 @@ class EventHandlingTechnique2 extends Component {
                         <img alt='image not found' src='https://picsum.photos/300' className='img-fluid' />
                     </div>
                     <div className='card-footer'>
-                        <button onClick={this.changeLabel} type='button' className='btn btn-primary'>{this.state.label}</button>
+                        <button onClick={this.changeLabel} type='button' className='btn btn-primary'>{this.state.label}</button>&nbsp;
+                        <button onClick={()=>this.ShareDetail(1,'Ankit')}type='button' className='btn btn-info'>Share</button>
                     </div>
                 </div>
             </div>
          );
     }
 }
- 
 export default EventHandlingTechnique2;
