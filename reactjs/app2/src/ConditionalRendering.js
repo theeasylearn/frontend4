@@ -17,7 +17,8 @@ class ConditionalRendering extends Component {
     }
     Login = () => {
         this.setState({
-            IsLoggedIn : true
+            IsLoggedIn : true,
+            UserName : 'Ankit Patel'
         });
     }
     Logout = () =>
@@ -25,6 +26,27 @@ class ConditionalRendering extends Component {
         this.setState({
             IsLoggedIn : false
         });
+    }
+    UserGreeting()
+    {
+        return <h1>Welcome {this.state.UserName}</h1>
+    }
+    GuestGreeting()
+    {
+        return <h1>Welcome Guest</h1>
+    }
+    GreetingMessage()
+    {
+        let message;
+        if (this.state.IsLoggedIn==true)
+        {
+            message = this.UserGreeting();
+        }
+        else 
+        {
+            message = this.GuestGreeting();
+        }
+        return message
     }
     render() { 
         let button; //local variable
@@ -38,10 +60,10 @@ class ConditionalRendering extends Component {
         }
         return ( 
             <div className='col-12'>
+                {this.GreetingMessage()}
                 {button}
             </div>
          );
-    }
+    }  
 }
- 
 export default ConditionalRendering;

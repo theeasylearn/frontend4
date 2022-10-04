@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ConditionalRendering from './ConditionalRendering';
+import ConditionalRendering2 from './ConditionalRendering2';
 import './index.css';
 //create class component
 // class Page extends React.Component
@@ -205,15 +205,16 @@ import './index.css';
 //         </div>
 //     )
 // }
-function ConditionRenderingDemo()
-{
-    return(
-        <div className='container mt-3'>
-            <div className='row'>
-                <ConditionalRendering />
-            </div>
-        </div>
-    )
-}
+// function ConditionRenderingDemo()
+// {
+//     return(
+//         <div className='container mt-3'>
+//             <div className='row'>
+//                 <ConditionalRendering />
+//             </div>
+//         </div>
+//     )
+// }
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<ConditionRenderingDemo />); 
+var messages = [];
+root.render(<ConditionalRendering2 messages={messages} />); 
