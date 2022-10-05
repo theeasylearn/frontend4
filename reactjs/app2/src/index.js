@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ConditionalRendering2 from './ConditionalRendering2';
+// import ConditionalRendering2 from './ConditionalRendering2';
+// import ListExample1 from './ListExample1';
+import ListExample2 from './ListExample2';
 import './index.css';
 //create class component
 // class Page extends React.Component
@@ -216,5 +218,7 @@ import './index.css';
 //     )
 // }
 const root = ReactDOM.createRoot(document.getElementById('root'));
-var messages = [];
-root.render(<ConditionalRendering2 messages={messages} />); 
+// var states = ['Gujarat','Maharastra','Karanataka','Andhra-pradesh','Tamil nadu','Kerala'];
+var states = [{name:'Gujarat',id:1},{name:'Maharastra',id:2},{name:'Karanataka',id:3},{name:'Andrha-pradesh',id:4},{name:'Tamil nadu',id:5}];
+
+root.render(<ListExample2 states={states} />); 
