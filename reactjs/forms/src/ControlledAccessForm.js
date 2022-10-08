@@ -19,7 +19,7 @@ class ControlledAccessForm extends React.Component {
     {
         event.preventDefault();
         console.log(this.state);
-        console.log("form submited");
+        console.log("form submitted");
         var height = parseInt(this.state.height); 
         var width = parseInt(this.state.width); 
         var length = parseInt(this.state.length);
