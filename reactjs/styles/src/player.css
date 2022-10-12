@@ -1,0 +1,15 @@
+.PlayerList
+{
+    border:2px solid green;
+    margin:10px;
+    list-style-type: none;
+    padding:10px;
+    background-color: aliceblue;
+}
+.item 
+{
+    font-size: 1.5rem;
+    border-bottom: 1px solid blue;
+    color:blue;
+    padding-bottom: 5px;
+}
