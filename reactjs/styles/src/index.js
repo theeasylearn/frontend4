@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Player from './ComponentStyleExample';
-function ComponentStyleDemo()
+import Player from './StyledComponents';
+function StyledComponentDemo()
 {
   return(
     <div>
@@ -13,4 +12,4 @@ function ComponentStyleDemo()
   )
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<ComponentStyleDemo />);
+root.render(<StyledComponentDemo />);

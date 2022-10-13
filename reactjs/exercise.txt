@@ -13,3 +13,13 @@ Create Following functional components using bootstrap
     Header
     Body (will display 12 product details using product functional components. each product has name, price,description,photo(to be displayed from internet))
     Footer 
+
+Create stock market app that will display 5 stock name,current price,change in percentage, along with suitable up & down arrow & price in individual card. at every second price should randomly increase or decrease by in percentage.
+
+Create farenheit to ceilcius converter that accept farenheit from user and convert it into ceilcius using controlled input approach & class component
+
+Create farenheit to ceilcius converter that accept farenheit from user and convert it into ceilcius using controlled input approach & functional component
+
+Create Age Calculator that accept user birth date and calculate display his current age in years,month,days, week using controlled input approach & class component
+
+Create Age Calculate that accept user birth date and calculate display his current age in years,month,days, week using controlled input approach & functional component
