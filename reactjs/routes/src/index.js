@@ -13,13 +13,13 @@ function RouteDemo()
   return(
     <BrowserRouter>
       <Routes>
-        <Route path='/' element=<Menu /> >
-          <Route index element=<Home /> />
-          <Route path='aboutus' element=<AboutUs /> />
-          <Route path='contactus/:mobile/:email' element=<ContactUs /> />
-          <Route path='contactus/:mobile/:email' element=<ContactUs /> />
-          <Route path='blog' element=<Blog /> />
-          <Route path='*' element=<PageNotFound /> />
+        <Route path='/' element={<Menu />} >
+          <Route path='/' element={<Home />} ></Route>
+          <Route path='aboutus'   element={<AboutUs />} ></Route>
+          <Route path='contactus/:mobile/:email'  element={<ContactUs />} ></Route>
+          <Route path='contactus/:mobile/:email'  element={<ContactUs />} ></Route>
+          <Route path='blog' element={<Blog />}  ></Route>
+          <Route path='*' element={<PageNotFound />} ></Route>
         </Route>
       </Routes>
     </BrowserRouter>

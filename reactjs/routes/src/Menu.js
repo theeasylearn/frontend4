@@ -5,19 +5,20 @@ function Menu() {
             <div className="container-fluid bg-light">
                 <ul className="nav">
                     <li className="nav-item">
-                        <a href="/" className="nav-link">Home</a>
+                        <Link className="nav-link" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="aboutus" className="nav-link">About us</a>
+                        <Link className="nav-link" to="/aboutus">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="blog" className="nav-link">Blog</a>
+                        <Link className="nav-link" to="/Blog">Home</Link>
+
                     </li>
                     <li className="nav-item">
-                        <a href="contactus/9662512857/ankit3385@gmail.com" className="nav-link">Contact Sales</a>
+                        <Link className="nav-link" to="/contactus/9662512857/support@theeasylearn.com">Contact support Team</Link>
                     </li>
                     <li className="nav-item">
-                        <a href="contactus/1231231230/support@gmail.com" className="nav-link">Contact Support</a>
+                        <Link className="nav-link" to="/contactus/9368521471/sales@theeasylearn.com">Contact Sales Team</Link>
                     </li>
                 </ul>
                 <hr/>
