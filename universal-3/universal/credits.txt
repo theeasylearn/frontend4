@@ -1,0 +1,19 @@
+------------------------------------------
+ CREDITS
+------------------------------------------
+
+    - Bootstrap 5    -    https://getbootstrap.com
+
+    - Font Awesome   -    https://fontawesome.com
+
+    - Orion Icons    -    https://orioniconlibrary.com/
+
+    - Leaflet        -    https://leafletjs.com/
+
+    - Swiper.js      -    https://swiperjs.com/
+
+    - Waypoints      -    http://imakewebthings.com/waypoints/
+
+    - Choices.js     -    https://github.com/Choices-js/Choices
+
+    - SVG ERROR ILLUSTRATION - https://www.freepik.com/free-vector/error-404-landing-page-flat-style_4934499.htm#page=1&query=404%20page&position=5
