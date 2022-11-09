@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import PageHeading from './PageHeading';
-class Category extends Component {
+class Login extends Component {
     constructor(props) {
         super(props);
     }
     render() { 
         return (
             <div>
-            <PageHeading title='Shop' />
+            <PageHeading title='Login' />
             <div className='container'>
                 <div className='row'>
                     <div className='col-12'>
-                        <h1>Category</h1>
+                        <h1>Login</h1>
                     </div>
                 </div>
             </div>
@@ -20,4 +20,4 @@ class Category extends Component {
     }
 }
 
-export default Category;
+export default Login;
