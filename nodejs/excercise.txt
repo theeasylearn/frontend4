@@ -1,0 +1,10 @@
+create local interest.js module which following functions
+    getSimpleInterest() which will return simple interest of given amount,rate,year
+    getCompoundInterest() which will return compound interest of given amount,rate,year
+
+create local datetime.js module which following functions
+    getDate() which return current date 
+    getTime() which return current time 
+
+create server that display current date and time of each received request.
+    
