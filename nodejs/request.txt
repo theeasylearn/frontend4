@@ -1,0 +1,6 @@
+127.0.0.1:5000/
+127.0.0.1:5000/aboutus
+
+request with querystring
+127.0.0.1:5000/contactus?name=ankit&mobile=123123
+127.0.0.1:5000/product?id=1
