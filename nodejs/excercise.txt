@@ -8,3 +8,11 @@ create local datetime.js module which following functions
 
 create server that display current date and time of each received request.
     
+create a website which has 5 five following pages 
+    home
+    about us
+    contact us 
+    product 
+    service
+
+create page in project directory and return it as output using fs module readFile method 
