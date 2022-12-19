@@ -1,0 +1,6 @@
+
+Error No 1146 Message ER_NO_SUCH_TABLE: Table 'node.category11' doesn't exist
+Error No 1054 Message ER_BAD_FIELD_ERROR: Unknown column 'title11' in 'order clause'    
+Error No 1146 Message ER_NO_SUCH_TABLE: Table 'node.category1234' doesn't exist
+Error No 1054 Message ER_BAD_FIELD_ERROR: Unknown column 'id1' in 'where clause'
+Error No 1054 Message ER_BAD_FIELD_ERROR: Unknown column 'id1' in 'where clause'
