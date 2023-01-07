@@ -1,5 +1,5 @@
 var common = require("./common");
-
+var fs = require("fs");
 let  getAllStudent  = function (request,response)
 {
     console.log("request received....");
@@ -53,6 +53,12 @@ let  getStudentById  = function (request,response)
         }
     });
 }
+let inputform = function(request,response){
+    var FileName = "insert_student.html";
+    var FileContent = fs.readFileSync(FileName);
+    response.send(FileContent.toString());
+}
+
 let InsertStudent = function(request,response){
     common.MongoClient.connect(common.Connection,function(error,database){
         if(error!=null)
@@ -131,3 +137,4 @@ module.exports.InsertStudent = InsertStudent;
 module.exports.UpdateStudent = UpdateStudent;
 module.exports.DeleteStudent = DeleteStudent;
 module.exports.getStudentById = getStudentById;
+module.exports.inputform = inputform;
