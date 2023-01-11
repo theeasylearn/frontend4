@@ -1,0 +1,20 @@
+doctype html 
+html
+    head 
+        title Login 
+    body 
+        h1 Admin Login <hr/>
+        form(method='post',action='')
+            table(align='center',border='2',cellpadding='10')
+                tr
+                    td(width='25%') Email
+                    td
+                        input(type='email',name='email',required='required')
+                tr 
+                    td Password
+                    td 
+                        input(type='password',name='password',required='required')
+                tr 
+                    td(colspan='2',align='center')
+                        input(type='submit',name='btnsubmit',value='Login')
+                        input(type='reset',name='btnreset',value='clear')
