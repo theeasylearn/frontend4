@@ -8,7 +8,11 @@ html
             tr
                 td(width='25%') 
                     b Name
-                td=name
+                td
+                    if(name)
+                        b=name
+                    else
+                        name not available
             tr 
                 td
                     b Mobile

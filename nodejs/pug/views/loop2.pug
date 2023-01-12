@@ -1,0 +1,11 @@
+doctype html 
+html 
+    head
+        title loop example
+    body 
+        table(width='50%',align='center',cellpadding='10',border='1')
+            each language,index in languages
+                tr
+                    td=index+1
+                    td=language
+            

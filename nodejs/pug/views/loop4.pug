@@ -1,0 +1,10 @@
+doctype html 
+html 
+    head
+        title loop example
+    body 
+        table(width='50%',align='center',cellpadding='10',border='1')
+            - var count=1
+            while count<=10
+                tr 
+                    td=count++
