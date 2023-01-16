@@ -1,0 +1,16 @@
+doctype html 
+html 
+    head 
+        title displaying data from table 
+    body 
+        h1 all existing products <hr/>
+        table(border='2',align='center',width='75%',cellpadding='5') 
+            tr 
+                th ID 
+                th Name 
+                th Price 
+                th Quantity 
+            each row in all_products
+                tr
+                each FieldValue,FieldName in row 
+                    td=FieldValue
