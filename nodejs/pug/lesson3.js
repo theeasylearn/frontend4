@@ -1,6 +1,5 @@
 var express = require("express");
 var app = express();
-var connection = require("./connection");
 
 app.set("view engine","pug");
 app.set("views","views");
