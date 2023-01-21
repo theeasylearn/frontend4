@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Document
+    link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css', rel='stylesheet', integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD', crossorigin='anonymous')
+  body
+    // responsive menu
+    nav.navbar.navbar-expand-lg.bg-primary(data-bs-theme='dark')
+      .container-fluid
+        a.navbar-brand(href='#') The easylearn academy
+        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarNavDropdown.collapse.navbar-collapse.justify-content-end
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link.active(aria-current='page', href='/') Home
+            li.nav-item
+              a.nav-link(href='/aboutus') About us
+            li.nav-item
+              a.nav-link(href='/products') Products
+            li.nav-item
+              a.nav-link(href='/services') Services
+            li.nav-item
+              a.nav-link(href='/contactus') Contact us
+    // responsive menu

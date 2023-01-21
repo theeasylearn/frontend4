@@ -1,0 +1,123 @@
+include header.pug
+div 
+    #carouselWithIndicators.carousel.slide(data-bs-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-bs-target='#carouselWithIndicators', data-bs-slide-to='0')
+        li(data-bs-target='#carouselWithIndicators', data-bs-slide-to='1')
+        li(data-bs-target='#carouselWithIndicators', data-bs-slide-to='2')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='https://picsum.photos/1200/300', alt='Slide 1')
+        .carousel-item
+          img.d-block.w-100(src='https://picsum.photos/1200/299', alt='Slide 2')
+        .carousel-item
+          img.d-block.w-100(src='https://picsum.photos/1200/301', alt='Slide 3')
+      a.carousel-control-prev(href='#carouselWithIndicators', role='button', data-bs-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.visually-hidden Previous
+      a.carousel-control-next(href='#carouselWithIndicators', role='button', data-bs-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.visually-hidden Next
+    // slider
+    .container.mt-5.mb-5
+      .row
+        .col-12.border-bottom.mb-3
+          h3 Our Recent Achivements
+        .col-lg-4.col-md-4.col-sm-12.col-12
+          .card.shadow
+            img.card-img-top(src='https://picsum.photos/150', alt='card-img-top')
+            .card-body
+              h5.card-title Achivements 1
+              p.card-text
+                | This is a wider card with supporting text below as a natural lead-in to
+                | additional content. This content is a little bit longer.
+              a.btn.btn-primary(href='') Read More...
+        .col-lg-4.col-md-4.col-sm-12.col-12
+          .card.shadow
+            img.card-img-top(src='https://picsum.photos/151', alt='card-img-top')
+            .card-body
+              h5.card-title Achivements 2
+              p.card-text
+                | This is a wider card with supporting text below as a natural lead-in to
+                | additional content. This content is a little bit longer.
+              a.btn.btn-primary(href='') Read More...
+        .col-lg-4.col-md-4.col-sm-12.col-12
+          .card.shadow
+            img.card-img-top(src='https://picsum.photos/149', alt='card-img-top')
+            .card-body
+              h5.card-title Achivements 3
+              p.card-text
+                | This is a wider card with supporting text below as a natural lead-in to
+                | additional content. This content is a little bit longer.
+              a.btn.btn-primary(href='') Read More...
+      .row.mt-5
+        .col-12.mb-3.border-bottom
+          h3 Director&apos;s Message
+        .col-lg-4.col-md-4.col-sm-6.col-12
+          img.img-fluid.shadow(src='https://picsum.photos/300', alt='img-fluid')
+        .col-lg-8.col-md-8.col-sm-6.col-12
+          h4 Work Harder, get luckier
+          p(style='text-align: justify;')
+            | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident consequuntur iusto molestiae
+            | dolorem quisquam sequi aliquam quas, dolor soluta consectetur earum vitae distinctio nesciunt veniam
+            | similique voluptatum. Magnam eum maxime sit vitae quam exercitationem, enim quod nobis consequatur
+            | animi non aliquid. Ducimus iste, dolor esse voluptatum sit ut officia aperiam minus? Eius facilis
+            | mollitia obcaecati illo sunt tempora repellat cupiditate quasi asperiores natus saepe quaerat nam
+            | minus est, harum voluptates ipsa animi non nihil perferendis ducimus? Ex delectus rem tenetur,
+            | accusantium reiciendis quas ullam laboriosam quasi? Excepturi provident reprehenderit sunt
+            | voluptatibus atque ducimus possimus repellat, officiis temporibus ipsa porro voluptas veritatis quia
+            | dolores aspernatur tempore facere architecto mollitia nihil repudiandae quod. Nulla iure ipsam
+            | alias! Culpa quos animi quis distinctio eos voluptatibus sapiente, nemo temporibus quasi nobis minus
+            | tenetur nulla reiciendis quod magni quibusdam ullam officiis laborum repellat blanditiis earum
+            | doloribus? Doloremque, labore exercitationem! Aut aliquam porro saepe provident autem.
+      .row.mt-5
+        .col-12.mb-3.border-bottom
+          h3 What we do?
+        .col-lg-8.col-md-8.col-sm-6.col-12
+          h4 We do lot of things
+          p(style='text-align: justify;')
+            | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident consequuntur iusto molestiae
+            | dolorem quisquam sequi aliquam quas, dolor soluta consectetur earum vitae distinctio nesciunt veniam
+            | similique voluptatum. Magnam eum maxime sit vitae quam exercitationem, enim quod nobis consequatur
+            | animi non aliquid. Ducimus iste, dolor esse voluptatum sit ut officia aperiam minus? Eius facilis
+            | mollitia obcaecati illo sunt tempora repellat cupiditate quasi asperiores natus saepe quaerat nam
+            | minus est, harum voluptates ipsa animi non nihil perferendis ducimus? Ex delectus rem tenetur,
+            | accusantium reiciendis quas ullam laboriosam quasi? Excepturi provident reprehenderit sunt
+            | voluptatibus atque ducimus possimus repellat, officiis temporibus ipsa porro voluptas veritatis quia
+            | dolores aspernatur tempore facere architecto mollitia nihil repudiandae quod. Nulla iure ipsam
+            | alias! Culpa quos animi quis distinctio eos voluptatibus sapiente, nemo temporibus quasi nobis minus
+            | tenetur nulla reiciendis quod magni quibusdam ullam officiis laborum repellat blanditiis earum
+            | doloribus? Doloremque, labore exercitationem! Aut aliquam porro saepe provident autem.
+        .col-lg-4.col-md-4.col-sm-6.col-12
+          img.img-fluid.shadow(src='https://picsum.photos/302', alt='img-fluid')
+      .row.mt-5.mb-5
+        .col-12
+          h3.border-bottom.mb-3 What other say about us 
+        .col-lg-6.col-md-6.col-sm-12.col-12
+          .card.shadow
+            .row.g-0
+              .col-5.col-sm-4
+                img.img-fluid.w-100(src='https://picsum.photos/300', alt='card-horizontal-image')
+              .col-7.col-sm-8
+                .card-body
+                  h5.card-title sundar pichai
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content.
+                  p.card-text
+                    a.btn.btn-danger(href='') Read More
+        .col-lg-6.col-md-6.col-sm-12.col-12
+          .card.shadow
+            .row.g-0
+              .col-5.col-sm-4
+                img.img-fluid.w-100(src='https://picsum.photos/300', alt='card-horizontal-image')
+              .col-7.col-sm-8
+                .card-body
+                  h5.card-title Elon Musk
+                  p.card-text
+                    | This is a wider card with supporting text below as a natural lead-in to additional content.
+                  p.card-text
+                    a.btn.btn-danger(href='') Read More
+      .row
+        .col-12
+          br
+include footer.pug
