@@ -3,42 +3,19 @@ include header.pug
     .row.mt-5.mb-5
         .col-12
             h3.border-bottom.pb-3 Our Services
-        .col-lg-4.col-md-4.col-sm-12.col-12
-            .card.shadow
-            .row.g-0
-                .col-5.col-sm-4
-                img.img-fluid.w-100.h-100(src='https://picsum.photos/250', alt='card-horizontal-image')
-                .col-7.col-sm-8
-                .card-body
-                    h5.card-title Software development
-                    p.card-text
-                    | This is a wider card with supporting text below as a natural lead-in to additional content.
-                    p.card-text
-                    a.btn.btn-danger Read more...
-        .col-lg-4.col-md-4.col-sm-12.col-12
-            .card.shadow
-            .row.g-0
-                .col-5.col-sm-4
-                img.img-fluid.w-100.h-100(src='https://picsum.photos/250', alt='card-horizontal-image')
-                .col-7.col-sm-8
-                .card-body
-                    h5.card-title Software development
-                    p.card-text
-                    | This is a wider card with supporting text below as a natural lead-in to additional content.
-                    p.card-text
-                    a.btn.btn-danger Read more...
-        .col-lg-4.col-md-4.col-sm-12.col-12
-            .card.shadow
-            .row.g-0
-                .col-5.col-sm-4
-                img.img-fluid.w-100.h-100(src='https://picsum.photos/250', alt='card-horizontal-image')
-                .col-7.col-sm-8
-                .card-body
-                    h5.card-title Software development
-                    p.card-text
-                    | This is a wider card with supporting text below as a natural lead-in to additional content.
-                    p.card-text
-                    a.btn.btn-danger Read more...
+        each service in services
+            .col-lg-4.col-md-4.col-sm-12.col-12
+                .card.shadow
+                .row.g-0
+                    .col-5.col-sm-4
+                    img.img-fluid.w-100.h-100(src='https://picsum.photos/250', alt='card-horizontal-image')
+                    .col-7.col-sm-8
+                    .card-body
+                        h5.card-title #{service.name}
+                        p.card-text
+                        | #{service.description}
+                        p.card-text
+                        a.btn.btn-danger Read more...
     .row.mb-5.mt-5
     .col-12
 include footer.pug
